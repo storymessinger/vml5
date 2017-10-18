@@ -1,20 +1,225 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="http://angularjs.blogspot.ca/">Angular blog</a></h2>
-  </li>
-</ul>
+<!--<!DOCTYPE html>
+<html>
 
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>visual media lab website</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+</head>-->
+
+<!--<body>-->
+  <div class="collapse fixed-top" id="navbarToggleExternalContent">
+    <div class="bg-inverse p-4">
+      <div class="btn-box">
+        <!-- <md-icon class="menu_btn" data-toggle="collapse" data-target="#navbarToggleExternalContent">menu</md-icon> -->
+      </div>
+      <h4 class="text-white menu-title">VISUAL MEDIA LAB</h4>
+      <div class="list-group">
+        <!-- <a routerLink="/main/info" class="list-group-item list-group-item-action">ABOUT</a>
+        <a [routerLink]="['/main/people']" class="list-group-item list-group-item-action">PEOPLE</a>
+        <a routerLink="/main/area" class="list-group-item list-group-item-action">RESEARCH</a>
+        <a routerLink="/main/news" class="list-group-item list-group-item-action">NEWS & EVENT</a>
+        <a routerLink="/main/downloads" class="list-group-item list-group-item-action">ARCHIVE</a> -->
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-light fixed-top" id="nav-animation">
+    <!-- <md-icon class="menu_btn" data-toggle="collapse" data-target="#navbarToggleExternalContent">menu</md-icon> -->
+
+    <a routerLink="/" class="indexpage-nav-btn navbar-brand">
+      <img [src]='logoIconPath' height="66" id="logo-animation">
+    </a>
+    <ul class="nav navbar-nav">
+      <!-- <li class="menu01 nav-item"><a class="nav-link" routerLink="/main/info">ABOUT</a></li>
+      <li class="menu01 nav-item"><a class="nav-link" [routerLink]="['/main/people']">PEOPLE</a></li>
+      <li class="menu01 nav-item"><a class="nav-link" routerLink="/main/area">RESEARCH</a></li>
+      <li class="menu01 nav-item"><a class="nav-link" routerLink="/main/news">NEWS & EVENT</a></li>
+      <li class="menu01 nav-item"><a class="nav-link" routerLink="/main/downloads">ARCHIVE</a></li> -->
+    </ul>
+    <ul class="search-nav">
+      <li class="search">
+        <img class="search_btn" fill-opacity="0" width="30px">
+        <input id="searchBar">
+      </li>
+    </ul>
+  </nav>
+
+  <div class="main no-gutters">
+    <div class="col-sm">
+
+      <!--<div class="row header" [style.background-image]="'url(' + mainImgPath + ')'">-->
+      <div class="row header">
+
+        <video autoplay loop muted id="video-bg" poster="./assets/imgs/home_mainImg.jpg">
+          <source src="./assets/imgs/video_ScreenX.mp4" type="video/mp4" />
+          <img src="/assets/imgs/home_mainImg.jpg">
+        </video>
+
+        <div class="title text-center">
+          <div class="display-2 title-text">VISUAL MEDIA LAB</div>
+          <h3 class="title-text">Where Creativity Meets Techonology</h3>
+          <p class="title-text">focuses on developing fundamental computer graphics technology and software applications specifically for the creation
+            of movie visual effects and animated films. Since its foundation in 2006, VML has emphasized both R&D and contens
+            production as a core part of lab activity. About 20 Ph.D. and master program students along have published numerous
+            papers at premium graphics conferences and showcased animations at international computer animated festivals.
+            The close relationship with industry has allowed VML to contribute its technology to recently released movies.</p>
+            
+            <!--<a href="home#top">top</a>-->
+            
+        </div>
+
+        <!-- <md-icon id="arrowBtn" (click)="moveTo('arrowBtn')" class="title-arrow text-center">keyboard_arrow_down</md-icon> -->
+        
+      </div>
+
+
+      <div class="row content" id="nav-trigger">
+
+        <div id="arrowBtnPlace" class="Heading col-sm-12 text-center" scrollSpy>
+          <h1>Reseach Area</h1>
+          <p class="section-desc" >The main research area includes motion and facial animation of virtual chararcter, immersive display system and
+            human interaction system</p>
+        </div>
+        <div class="card-deck-wrapper col-sm-12">
+          <div class="card-deck">
+            <div class="ie11-issue">
+
+              <div (click)='navigateTo(team.id)' *ngFor="let team of teams" class="card pad card-area width300">
+
+                <img class="img-fluid card-img-top" default="./assets/imgs/no_image.jpg" [srcset]=" imgPath + team.smallimg" [src]=" imgPath + team.img">
+                <div class="card-block">
+                  <h4 class="card-title">{{team.shortname}}</h4>
+                  <p class="card-text">{{team.fullname}}</p>
+                  <p class="card-text"><small class="text-muted">{{team.area}}</small></p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+<div class="col-sm-12">
+        <div class="col-sm-12 news">
+          <div class="Heading text-center col-sm-12">
+            <h1>Recent Publications</h1>
+            <p class="section-desc" >The main research area includes motion and facial animation of virtual chararcter, immersive display system and
+              human interaction system</p>
+          </div>
+
+          <div class="">
+
+            <div (click)='navigateTo(pub.id, 1)' *ngFor="let pub of publications" class="card issueCard pad pub-pad">
+              <img class="news-img card-img-top img-fluid" default="./assets/imgs/no_image.jpg" [srcset]=" imgPath + pub.img" [src]=" imgPath + pub.img">
+              <div class="card-block">
+                <h4 class="card-title">{{pub.title}}</h4>
+                <p class="card-text desc">{{pub.conference}}</p>
+                <!--<p class="card-text"><small class="text-muted">{{pub.year}}</small></p>-->
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-sm-12 news">
+          <div class="Heading text-center col-sm-12">
+            <h1>Recent News and Media</h1>
+            <p class="section-desc" >Recent news related to Visual Media Lab</p>
+          </div>
+
+          <div class="card-columns">
+            <div *ngFor="let issue of issues" class="card issueCard">
+              <img class="news-img card-img-top img-fluid" default="./assets/imgs/no_image.jpg" [srcset]=" imgPath + issue.img" [src]=" imgPath + issue.img">
+              <div class="card-block">
+                <h4 class="card-title">{{issue.title}}</h4>
+                <p class="card-text desc">{{issue.desc}}</p>
+                <p class="card-text"><small class="text-muted">{{issue.date}}</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-12 news">
+          <div class="Heading text-center col-sm-12">
+            <h1>Partners</h1>
+            <p class="section-desc">Partners with the Visual Media Lab</p>
+          </div>
+
+          <div class="partners-columns">
+            <div *ngFor="let partner of partners" class="partner-img-box">
+              <img class="partner-img" default="./assets/imgs/no_image.jpg" [srcset]=" imgPath + partner.logo" [src]=" imgPath + partner.logo">
+            </div>
+          </div>
+
+          <div class="partners-more text-center">
+            <a routerLink="/main/partners" class="myButton">MORE PARTNERS</a>
+          </div>
+
+        </div>
+
+
+
+
+</div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 right-border">
+          <div class="footer-about">
+            <h2 class="footer-title">About Us</h2>
+            <p class="menu02">The Visual Media Lab (VML) in the Graduate School of Culture Technology (GSCT) at KAIST is where technology and creativity meet. VML focuses on developing fundamental computer graphics technology and software applications specifically for the creation of movie visual effects and animated films. The main research area includes character animation, fluid simulation, and stereoscopic visualization. </p>
+          </div>
+          <div class="copyright hidden-sm hidden-xs">
+            <p>Copyrights &copy; 2017 <a href="http://vml.kaist.ac.kr/" title="">VML KAIST</a>. All Right Reserved.</p>
+            <p>Developed By : <a href="http://jundong.info/" title="">JJAKA</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="col-md-6 col-sm-6 ">
+            <div class="navigation">
+              <h2 class="footer-title">Navigation</h2>
+              <ul class="list-unstyled">
+                <!-- <li class=""><a class="" routerLink="/main/info">ABOUT</a></li>
+                <li class=""><a class="" [routerLink]="['/main/people']">PEOPLE</a></li>
+                <li class=""><a class="" routerLink="/main/area">RESEARCH</a></li>
+                <li class=""><a class="" routerLink="/main/news">NEWS & EVENT</a></li>
+                <li class=""><a class="" routerLink="/main/downloads">ARCHIVE</a></li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="contact-info">
+              <h2 class="footer-title">Contact Info</h2>
+              <div class="single">
+                <!-- <md-icon class="md-light">location_on</md-icon> -->
+                <p>Visual Media Lab, KAIST 
+                  <br>373-1 Guseong-dong, Yuseong-gu Daejeon, 305-701, Republic of Korea
+                </p>
+              </div>
+              <div class="single">
+                <!-- <md-icon class="md-light">phone</md-icon> -->
+                <p>+82-42-350-5918</p>
+              </div>
+
+              <div class="single">
+                <!-- <md-icon class="md-light">email</md-icon> -->
+                <p>visualmedia@kaist.ac.kr</p>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!--</body>-->
+<!-- Core JS Files-->
+<!--
+</html>-->
